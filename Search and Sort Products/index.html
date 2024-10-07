@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search and Sort</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header with Search Bar -->
+    <header>
+        <div class="header-content">
+            <h1>ShopMate</h1>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search for products..." />
+            </div>
+        </div>
+    </header>
+
+    <!-- Filters and Sorting -->
+    <section class="filter-section">
+        <div class="filter-options">
+            <h2>Filter by Category</h2>
+            <label><input type="checkbox" value="Clothing" class="category-filter"> Clothing</label>
+            <label><input type="checkbox" value="Footwear" class="category-filter"> Footwear</label>
+            <label><input type="checkbox" value="Accessories" class="category-filter"> Accessories</label>
+        </div>
+
+        <div class="sort-options">
+            <h2>Sort by</h2>
+            <select id="sortSelect">
+                <option value="none">Select</option>
+                <option value="priceAsc">Price - Low to High</option>
+                <option value="priceDesc">Price - High to Low</option>
+                <option value="popularity">Popularity</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="product-grid" id="productGrid">
+        <!-- Placeholder for dynamically displayed products -->
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

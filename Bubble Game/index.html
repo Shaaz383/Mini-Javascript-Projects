@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Click Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <!-- Game Header: Timer, Score, and Target Number -->
+        <div class="top">
+            <h2>Time: <span id="time">60</span></h2>
+            <h2>Score: <span id="score">0</span></h2>
+            <h2>Target: <span id="click">0</span></h2>
+        </div>
+
+        <!-- Bubble Container where bubbles will appear -->
+        <div class="bottom"></div>
+
+        <!-- Game Over Screen -->
+        <div class="gameOver" style="display: none;">
+            <h1>Game Over</h1>
+            <h3>You Scored: <span id="final-score"></span></h3>
+            <button id="restart">Restart Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

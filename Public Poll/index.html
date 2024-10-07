@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Poll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Public Poll: What's your favorite fruit?</h1>
+        <div class="poll-options" id="pollOptions">
+            <div class="option" data-option="Apple">
+                <span>Apple</span>
+                <button class="voteBtn">Vote</button>
+                <div class="progress-bar" id="appleProgress">
+                    <div class="progress"></div>
+                </div>
+                <div class="vote-count" id="appleCount">0 votes</div>
+            </div>
+            <div class="option" data-option="Banana">
+                <span>Banana</span>
+                <button class="voteBtn">Vote</button>
+                <div class="progress-bar" id="bananaProgress">
+                    <div class="progress"></div>
+                </div>
+                <div class="vote-count" id="bananaCount">0 votes</div>
+            </div>
+            <div class="option" data-option="Cherry">
+                <span>Cherry</span>
+                <button class="voteBtn">Vote</button>
+                <div class="progress-bar" id="cherryProgress">
+                    <div class="progress"></div>
+                </div>
+                <div class="vote-count" id="cherryCount">0 votes</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

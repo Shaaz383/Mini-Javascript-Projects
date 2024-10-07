@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Book Preview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Input form -->
+        <div class="input-box">
+            <h2>Enter Book Details</h2>
+            <form>
+                <label for="bookTitle">Book Title:</label>
+                <input type="text" id="bookTitle" placeholder="Enter book title">
+
+                <label for="authorName">Author Name:</label>
+                <input type="text" id="authorName" placeholder="Enter author name">
+
+                <label for="publisher">Publisher:</label>
+                <input type="text" id="publisher" placeholder="Enter publisher name">
+
+                <label for="year">Year of Publication:</label>
+                <input type="text" id="year" placeholder="Enter year of publication">
+            </form>
+        </div>
+
+        <!-- Real-time Book Preview -->
+        <div class="book-preview">
+            <div class="book">
+                <div class="book-cover">
+                    <h2 id="bookTitleDisplay">Book Title</h2>
+                    <p id="authorNameDisplay">Author Name</p>
+                </div>
+                <div class="book-back">
+                    <p>Publisher: <span id="publisherDisplay">Publisher</span></p>
+                    <p>Year: <span id="yearDisplay">Year</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

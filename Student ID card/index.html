@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ID Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student ID Card Generator</h1>
+
+        <div class="input-box">
+            <input type="text" id="name" placeholder="Enter Name" required>
+            <input type="text" id="mobile" placeholder="Enter Mobile Number" required>
+            <input type="email" id="email" placeholder="Enter Email" required>
+            <input type="text" id="department" placeholder="Enter Department" required>
+            <input type="file" id="photo" accept="image/*">
+            <button onclick="generateIDCard()">Generate ID Card</button>
+        </div>
+
+        <div class="cards-container" id="cards-container">
+            <!-- Generated student cards will appear here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
